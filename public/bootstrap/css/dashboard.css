@@ -1,0 +1,126 @@
+
+.aside {
+    padding: 20px;
+    border-right: 1px solid #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.aside-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aside-header .bank-name {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    word-break: break-word;
+    font-weight: bold;
+}
+
+.aside-header .contact-info {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+    text-wrap: wrap;
+
+}
+
+.aside-nav ul.nav-pills {
+    flex-direction: column;
+}
+
+.aside-nav li.nav-item {
+    margin-bottom: 8px;
+}
+
+.aside-nav a.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.aside-nav a.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.aside-nav i {
+    margin-right: 10px;
+}
+
+.aside-actions {
+    display: grid;
+    gap: 10px;
+    margin-top: auto;
+}
+
+
+/* --------------------TABLE----------------------- */
+
+/* div container table  */
+.table-container {
+    overflow: auto;
+}
+
+/* style for the table  */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* line bottom  */
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* color of even line  */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #e9ecef;
+}
+
+/* color of the bottom last line  */
+.styled-table tbody tr:last-of-type {
+    border-bottom: 3px solid #007bff;
+}
+
+/* table add rendu click */
+.styled-table tbody tr:hover{
+    background-color: #07143d;
+    color: white;
+    cursor: pointer;
+}
+
+.aside-header a.nom-client:hover,
+.aside-header p.nom-bank:hover,
+.aside-header p.contact-info:hover,
+.aside-header p b:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.aside-nav ul.nav-pills li.nav-item a.nav-link:hover {
+    background-color: #e0f7fa;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+}
+
+.aside-nav ul.nav-pills li.nav-item a.nav-link:hover i {
+    color: white;
+}
